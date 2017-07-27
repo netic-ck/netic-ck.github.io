@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
-<body>
-
 <head>
+<meta charset="UTF-8">
+<title>Ernesto Ruiz Velasco | Character TD</title>
 <style>
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
 body {background-color: #181818;}
 h1   {color: lightgray; font-family: verdana; font-size: 160%;}
 h2   {color: slategray; font-family: verdana; font-size: 120%;}
@@ -13,28 +44,32 @@ a    {color: white; font-family: verdana; font-size: 80%;}
 </style>
 </head>
 
+<header>
+  <h1>Ernesto Ruiz Velasco</h1>
+  <h2>Character TD / Rigger</h2>
+</header>
 
-<table>
-  <tr>
-    <th></th>
-    <th>
-      <h1>Ernesto Ruiz Velasco</h1>
-      <h2>Character TD / Rigger</h2>
+<body>
+  <div class="flex-container">
+  <h3>Professional Reel 2016</h3>
+  <iframe src="https://player.vimeo.com/video/226608707" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <a href="http://ernesto.ruizvelasco.com/"> Behance </a> |
+    <a href="http://ernesto.ruizvelasco.com/"> Vimeo </a> |
+    <a href="http://ernesto.ruizvelasco.com/"> ArtStation </a></th>
+  </figcaption>
+  <h3>Reel Breakdown</h3>
 
-      <h3>Professional Reel 2016</h3>
-      <iframe src="https://player.vimeo.com/video/226608707" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <p>0:03 Oreo: Dad and Son Rigs
+  0:34 Oreo</p>
+  <footer>
+    <p>Posted by: Hege Refsnes</p>
+    <p>Mail: <a href="mailto:ernesto@ruizvelasco.com">
+    ernesto@ruizvelasco.com</a>.</p>
+  </footer>
 
-      <h3>Reel Breakdown</h3>
-
-      <p>0:03 Oreo: Dad and Son Rigs
-      0:34 Oreo</p>
-
-      <a href="http://ernesto.ruizvelasco.com/"> Behance </a> |
-      <a href="http://ernesto.ruizvelasco.com/"> Vimeo </a> |
-      <a href="http://ernesto.ruizvelasco.com/"> ArtStation </a></th>
-    <th></th>
-  </tr>
-</table>
-
+</div>
 </body>
+
+
 </html>
