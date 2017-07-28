@@ -11,6 +11,10 @@
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 720px;
+    max-width: 720px;
 }
 
 .flex-container > * {
@@ -19,6 +23,13 @@
     flex: 1 100%;
 }
 
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
 
 header {background: #080808;color:lightgray;}
 footer {background: #080808;color:gray;}
@@ -35,14 +46,14 @@ footer {background: #080808;color:gray;}
 
 
 body {background-color: black;}
-h1   {color: lightgray; font-family: verdana; font-size: 160%;}
-h2   {color: slategray; font-family: verdana; font-size: 120%;}
-h3   {color: gray; font-family: verdana; font-size: 100%;}
-p    {color: darkgray; font-family: verdana; font-size: 80%;}
-a    {text-decoration: none; color: lightgray; font-family: verdana; font-size: 80%;}
+h1   {color: lightgray; font-family: helvetica; font-size: 200%; letter-spacing: 2px; font-weight: normal;}
+h2   {color: slategray; font-family: helvetica; font-size: 150%; letter-spacing: 4px; font-weight: lighter;}
+h3   {color: gray; font-family: helvetica; font-size: 100%; letter-spacing: 4px; font-weight: lighter;}
+p    {color: darkgray; font-family: helvetica; font-size: 80%; letter-spacing: 4px; font-weight: lighter;}
+a    {text-decoration: none; color: lightgray; font-family: helvetica; font-size: 80%; letter-spacing: 3px; font-weight: lighter;}
 
 th, td {
-    text-align: left; color: darkgray; font-family: verdana; font-size: 60%; padding: 15px;
+    text-align: left; color: darkgray; font-family: verdana; font-size: 60%; padding: 15px; letter-spacing: 2px; font-weight: normal;}
 }
 
 </style>
@@ -54,6 +65,7 @@ th, td {
 </header>
 
 <body>
+  <div class="Aligner-item Aligner-item--top"></div>
   <div class="flex-container">
   <h3>Professional Reel 2016</h3>
   <iframe src="https://player.vimeo.com/video/226608707" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -66,7 +78,7 @@ th, td {
   <table>
   <tr>
     <th>0:02</th>
-    <th>McDonnals Fresh</th>
+    <th>McDonals Fresh</th>
     <th>Farmer and Branch Rig</th>
   </tr>
   <tr>
@@ -86,37 +98,37 @@ th, td {
   </tr>
   <tr>
     <th>0:11</th>
-    <th>McDonnals Fresh</th>
+    <th>McDonals Fresh</th>
     <th>Character Rig</th>
   </tr>
   <tr>
     <th>0:15</th>
-    <th>McDonnals Fresh</th>
+    <th>McDonals Fresh</th>
     <th>Character Rigs</th>
   </tr>
   <tr>
     <th>0:18</th>
-    <th>Seed</th>
+    <th>Seed Maters</th>
     <th>Character Rig, Outfit and Dynamic systems</th>
   </tr>
   <tr>
     <th>0:23</th>
-    <th>Seed</th>
+    <th>Seed Maters</th>
     <th>Blue Character Facials, Body Rig Polish, and Multiple outfits variations</th>
   </tr>
   <tr>
     <th>0:25</th>
-    <th>Seed</th>
+    <th>Seed Maters</th>
     <th>Blender Rig</th>
   </tr>
   <tr>
     <th>0:27</th>
-    <th>Seed</th>
+    <th>Seed Maters</th>
     <th>Character and bag Rig, Outfit, Sprout and Noise system for the cloth</th>
   </tr>
   <tr>
     <th>0:29</th>
-    <th>Seed</th>
+    <th>Seed Maters</th>
     <th>Character Rig Polish and Bilboard rig</th>
   </tr>
   <tr>
@@ -179,6 +191,7 @@ th, td {
   </footer>
 
 </div>
+<div class="Aligner-item Aligner-item--bottom"></div>
 </body>
 
 
