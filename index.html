@@ -13,8 +13,9 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    min-width: 720px;
+    min-width: 420px;
     max-width: 720px;
+    background-color: #101010;
 }
 
 .flex-container > * {
@@ -25,59 +26,71 @@
 
 .Aligner-item--top {
   align-self: flex-start;
+  height: 16px;
 }
 
 .Aligner-item--bottom {
   align-self: flex-end;
 }
 
+.nav {background:#eee;}
+.nav ul {list-style-type: none; padding: 0;}
+.nav ul a {text-decoration: none;}
+
+
 header {
   padding: 8px;
   text-align: center;
-  background: #080808;
-  color:lightgray;
+  background: black;
 }
-footer {background: #080808;color:gray;}
-.nav {background:#eee;}
-
-.nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-.nav ul a {
-    text-decoration: none;
-}
-
-
 
 body {background-color: black;}
 h1   {color: lightgray; font-family: helvetica; font-size: 200%; letter-spacing: 3px; font-weight: normal; line-height: 12px}
 h2   {color: slategray; font-family: helvetica; font-size: 150%; letter-spacing: 6px; font-weight: lighter; line-height: 8px}
-h3   {color: gray; font-family: helvetica; font-size: 100%; letter-spacing: 4px; font-weight: lighter;}
+h3   {color: lightgray; font-family: helvetica; font-size: 100%; letter-spacing: 4px; font-weight: lighter; line-height: 2px}
 p    {color: darkgray; font-family: helvetica; font-size: 80%; letter-spacing: 4px; font-weight: lighter;}
-a    {text-decoration: none; color: lightgray; font-family: helvetica; font-size: 80%; letter-spacing: 3px; font-weight: lighter;}
+t   {color: darkgray; font-family: helvetica; font-size: 80%; letter-spacing: 4px; font-weight: lighter;}
+
+a    {
+  text-decoration: none;
+  color: lightgray;
+  font-family: helvetica;
+  font-size: 80%;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+a:hover {
+    color: DodgerBlue;
+    font-weight: normal;
+}
 
 th, td {
-    text-align: left; color: darkgray; font-family: verdana; font-size: 60%; padding: 15px; letter-spacing: 2px; font-weight: normal;}
+    text-align: left; color: darkgray;
+    font-family: verdana; font-size:
+    60%; padding: 15px; letter-spacing:
+    2px; font-weight: normal;}
 }
+
+footer {
+    background: #050505;
+    color:gray;}
 
 </style>
 </head>
 
-<header>
-  <h1>Ernesto Ruiz Velasco</h1>
-  <h2>Character TD / Rigger</h2>
-</header>
-
 <body>
   <div class="Aligner-item Aligner-item--top"></div>
   <div class="flex-container">
+    <header>
+      <h1>Ernesto Ruiz Velasco</h1>
+      <h2>Character TD / Rigger</h2>
+    </header>
   <h3>Professional Reel 2016</h3>
   <iframe src="https://player.vimeo.com/video/226608707" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <figcaption>
-    <a href="https://www.behance.net/netic"> Behance </a> |
-    <a href="https://vimeo.com/netic"> Vimeo </a> |
-    <a href="https://www.artstation.com/artist/netic"> ArtStation </a></th>
+    <a href="https://www.behance.net/netic">Behance</a><t>  |  </t>
+    <a href="https://vimeo.com/netic">Vimeo</a> <t>  |  </t>
+    <a href="https://www.artstation.com/artist/netic">ArtStation</a></th>
   </figcaption>
   <h3>Reel Breakdown</h3>
   <table>
