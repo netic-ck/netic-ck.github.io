@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Ernesto Ruiz Velasco | Character TD</title>
-<style>
 
+<script>
+  $(document).ready(function() {
+  	$('[data-toggle="toggle"]').change(function(){
+  		$(this).parents().next('.hide').toggle();
+  	});
+  });
+</script>
+
+<style>
 .main-container {
   text-align: center;
   min-width: 420px;
@@ -53,6 +61,21 @@ th, td {
     2px; font-weight: normal;}
 }
 
+.labels tr td {
+	background-color: #2cc16a;
+	font-weight: bold;
+	color: #fff;
+}
+
+.label tr td label {
+	display: block;
+}
+
+
+[data-toggle="toggle"] {
+	display: none;
+}
+
 footer {
     background: gray;
   }
@@ -77,117 +100,128 @@ footer {
     <a href="https://www.artstation.com/artist/netic">ArtStation</a></th>
   </figcaption>
   <br/>
-  <br/>
-  <h3 align=c>Reel Breakdown</h3>
+
   <table>
-  <tr>
-    <th>0:02</th>
-    <th>McDonals Fresh</th>
-    <th>Farmer and Branch Rig</th>
-  </tr>
-  <tr>
-    <th>0:04</th>
-    <th>Verison</th>
-    <th>Crowd characters and close up rigs</th>
-  </tr>
-  <tr>
-    <th>0:06</th>
-    <th>Oreo</th>
-    <th>Mom model and facial topology for the daughter</th>
-  </tr>
-  <tr>
-    <th>0:07</th>
-    <th>Oreo</th>
-    <th>Character Rigs and facial topology</th>
-  </tr>
-  <tr>
-    <th>0:11</th>
-    <th>McDonals Fresh</th>
-    <th>Character Rig</th>
-  </tr>
-  <tr>
-    <th>0:15</th>
-    <th>McDonals Fresh</th>
-    <th>Character Rigs</th>
-  </tr>
-  <tr>
-    <th>0:18</th>
-    <th>Seed Maters</th>
-    <th>Character Rig, Outfit and Dynamic systems</th>
-  </tr>
-  <tr>
-    <th>0:23</th>
-    <th>Seed Maters</th>
-    <th>Blue Character Facials, Body Rig Polish, and Multiple outfits variations</th>
-  </tr>
-  <tr>
-    <th>0:25</th>
-    <th>Seed Maters</th>
-    <th>Blender Rig</th>
-  </tr>
-  <tr>
-    <th>0:27</th>
-    <th>Seed Maters</th>
-    <th>Character and bag Rig, Outfit, Sprout and Noise system for the cloth</th>
-  </tr>
-  <tr>
-    <th>0:29</th>
-    <th>Seed Maters</th>
-    <th>Character Rig Polish and Bilboard rig</th>
-  </tr>
-  <tr>
-    <th>0:33</th>
-    <th>The Inovator</th>
-    <th>Character Rigs with variations and multiple outfits</th>
-  </tr>
-  <tr>
-    <th>0:36</th>
-    <th>The Inovator</th>
-    <th>Man and sheep rigs</th>
-  </tr>
-  <tr>
-    <th>0:38</th>
-    <th>The Inovator</th>
-    <th>Character Rigs with variations and multiple outfits</th>
-  </tr>
-  <tr>
-    <th>0:41</th>
-    <th>The Inovator</th>
-    <th>Arms, Coats rig</th>
-  </tr>
-  <tr>
-    <th>0:44</th>
-    <th>McDonalds Happy</th>
-    <th>Vehicle Rig</th>
-  </tr>
-  <tr>
-    <th>0:46</th>
-    <th>F5 Love</th>
-    <th>Body Rigs with stretchy limbs</th>
-  </tr>
-  <tr>
-    <th>0:50</th>
-    <th>Dignity</th>
-    <th>Tape rig</th>
-  </tr>
-  <tr>
-    <th>0:53</th>
-    <th>Verizon</th>
-    <th>Crowd Character Rig with multiple variations</th>
-  </tr>
-  <tr>
-    <th>0:53</th>
-    <th>Verizon</th>
-    <th>Crowd Character Rig with multiple variations</th>
-  </tr>
-  <tr>
-    <th>0:56</th>
-    <th>The Inovator</th>
-    <th>Character Rigs and variations,
-      Sheep Rig
-      separate outfit rigs and connection tool</th>
-  </tr>
-  </table>
+    <tbody>
+    <tbody class="labels">
+			<tr>
+				<td colspan="3">
+					<label for="breakdown" align=c>Reel Breakdown</label>
+					<input type="checkbox" name="breakdown" id="breakdown" data-toggle="toggle">
+				</td>
+			</tr>
+		</tbody>
+  	<tbody class="hide">
+    <tr>
+      <th>0:02</th>
+      <th>McDonals Fresh</th>
+      <th>Farmer and Branch Rig</th>
+    </tr>
+    <tr>
+      <th>0:04</th>
+      <th>Verison</th>
+      <th>Crowd characters and close up rigs</th>
+    </tr>
+    <tr>
+      <th>0:06</th>
+      <th>Oreo</th>
+      <th>Mom model and facial topology for the daughter</th>
+    </tr>
+    <tr>
+      <th>0:07</th>
+      <th>Oreo</th>
+      <th>Character Rigs and facial topology</th>
+    </tr>
+    <tr>
+      <th>0:11</th>
+      <th>McDonals Fresh</th>
+      <th>Character Rig</th>
+    </tr>
+    <tr>
+      <th>0:15</th>
+      <th>McDonals Fresh</th>
+      <th>Character Rigs</th>
+    </tr>
+    <tr>
+      <th>0:18</th>
+      <th>Seed Maters</th>
+      <th>Character Rig, Outfit and Dynamic systems</th>
+    </tr>
+    <tr>
+      <th>0:23</th>
+      <th>Seed Maters</th>
+      <th>Blue Character Facials, Body Rig Polish, and Multiple outfits variations</th>
+    </tr>
+    <tr>
+      <th>0:25</th>
+      <th>Seed Maters</th>
+      <th>Blender Rig</th>
+    </tr>
+    <tr>
+      <th>0:27</th>
+      <th>Seed Maters</th>
+      <th>Character and bag Rig, Outfit, Sprout and Noise system for the cloth</th>
+    </tr>
+    <tr>
+      <th>0:29</th>
+      <th>Seed Maters</th>
+      <th>Character Rig Polish and Bilboard rig</th>
+    </tr>
+    <tr>
+      <th>0:33</th>
+      <th>The Inovator</th>
+      <th>Character Rigs with variations and multiple outfits</th>
+    </tr>
+    <tr>
+      <th>0:36</th>
+      <th>The Inovator</th>
+      <th>Man and sheep rigs</th>
+    </tr>
+    <tr>
+      <th>0:38</th>
+      <th>The Inovator</th>
+      <th>Character Rigs with variations and multiple outfits</th>
+    </tr>
+    <tr>
+      <th>0:41</th>
+      <th>The Inovator</th>
+      <th>Arms, Coats rig</th>
+    </tr>
+    <tr>
+      <th>0:44</th>
+      <th>McDonalds Happy</th>
+      <th>Vehicle Rig</th>
+    </tr>
+    <tr>
+      <th>0:46</th>
+      <th>F5 Love</th>
+      <th>Body Rigs with stretchy limbs</th>
+    </tr>
+    <tr>
+      <th>0:50</th>
+      <th>Dignity</th>
+      <th>Tape rig</th>
+    </tr>
+    <tr>
+      <th>0:53</th>
+      <th>Verizon</th>
+      <th>Crowd Character Rig with multiple variations</th>
+    </tr>
+    <tr>
+      <th>0:53</th>
+      <th>Verizon</th>
+      <th>Crowd Character Rig with multiple variations</th>
+    </tr>
+    <tr>
+      <th>0:56</th>
+      <th>The Inovator</th>
+      <th>Character Rigs and variations,
+        Sheep Rig
+        separate outfit rigs and connection tool</th>
+    </tr>
+  </tbody>
+<tbody>
+</table>
 
   <footer>
     <p><a href="mailto:ernesto@ruizvelasco.com">ernesto@ruizvelasco.com</a></p>
