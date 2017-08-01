@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ernesto Ruiz Velasco | Character TD</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
@@ -78,6 +78,11 @@ th, td {
 
 .labels th {
   background-color: none;
+}
+
+arrow {
+  padding-right: 15px;
+  font-size: 80%;
 }
 
 label {
@@ -181,7 +186,7 @@ footer {
             <table class=labels>
               <tr>
                  <th width=320>
-  					     <label for="breakdown">Reel Breakdown</label>
+  					     <label for="breakdown"><arrow>▼</arrow>Reel Breakdown</label>
                  <input type="checkbox" name="breakdown" id="breakdown" data-toggle="toggle" value="checked">
                  </th>
               </tr>
