@@ -8,6 +8,7 @@
 $(document).ready(function() {
 	$('[data-toggle="toggle"]').change(function(){
 		$(this).parents().next('.collapsable').toggle();
+    $(this).parents('label').toggleClass('checked');
 	});
 });
 </script>
@@ -80,7 +81,7 @@ th, td {
   background-color: none;
 }
 
-arrow {
+.arrow-up, .arrow-down {
   padding-right: 15px;
   font-size: 80%;
 }
@@ -111,6 +112,11 @@ label {
   cursor: pointer;
   display: block;
 }
+
+label .arrow-up { display: inline-block; }
+label .arrow-down { display: none; }
+label.checked .arrow-up { display: none; }
+label.checked .arrow-down { display: inline-block; }
 
 .social{
   table-layout: fixed;
@@ -186,8 +192,12 @@ footer {
             <table class=labels>
               <tr>
                  <th width=320>
-  					     <label for="breakdown"><arrow>▼</arrow>Reel Breakdown</label>
-                 <input type="checkbox" name="breakdown" id="breakdown" data-toggle="toggle" value="checked">
+  					     <label for="breakdown">
+                   <span class="arrow-up">▲</span>
+                   <span class="arrow-down">▼</span>
+                   Reel Breakdown
+                   <input type="checkbox" name="breakdown" id="breakdown" data-toggle="toggle" value="checked">
+                 </label>
                  </th>
               </tr>
             </table>
