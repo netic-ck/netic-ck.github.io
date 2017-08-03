@@ -39,16 +39,6 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-width: 520px) {
-    table .collapsable{
-        font-size: 150%;
-        width: 515px;
-    }
-    iframe {
-      width: 515px;
-      height: 320px;
-    }
-}
 
 h1   {color: black; font-family: helvetica; font-size: 200%; letter-spacing: 8px; font-weight: normal; line-height: 12px}
 h2   {color: slategray; font-family: helvetica; font-size: 160%; letter-spacing: 6px; font-weight: lighter; line-height: 15px}
@@ -165,8 +155,16 @@ iframe {
   left: 0; top: 0;
 }
 
+
 footer {
     padding: 2px;
+  }
+
+  @media only screen and (max-width: 520px) {
+      table .collapsable{
+          font-size: 150%;
+          width: 515px;
+      }
   }
 
 </style>
@@ -181,7 +179,9 @@ footer {
   </header>
   <br/>
     <h3>Professional Reel 2016</h3>
-    <iframe src="https://player.vimeo.com/video/226608707"  width="920" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="aspect-ratio">
+    <iframe  src="https://player.vimeo.com/video/226608707"  width="920" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
     <table class="social">
       <tr>
         <th width=49><a href="https://www.behance.net/netic">Behance</a></th>
